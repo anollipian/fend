@@ -49,7 +49,6 @@ function buildTheNav() {
     aref.appendChild(document.createTextNode(sectionName));
     aref.setAttribute("class", "menu__link");
     aref.setAttribute("href", '#' + sectionName);
-    //console.log(newListNode);
     newListNode.appendChild(aref);
     newListNode.setAttribute("class", sectionName + 'node');
     navBarMenu.appendChild(newListNode);
@@ -61,35 +60,29 @@ function updateState() {
   sectionsList.forEach(function (section) {
     const currentListItem = section.id + "node";
     const listMenu = document.getElementsByClassName(currentListItem)[0];
-   // const listItem = listMenu.querySelector('li');
     const CheckedSectionData = section.getBoundingClientRect();
     if (CheckedSectionData.top <= 150 && CheckedSectionData.bottom >= 150) {
-      //set the 
-
-
       section.setAttribute("class", "your-active-class");
       //Add active status to the nav bar item 
       listMenu.classList.add("active__link");
-    
     }
     else {
       CheckedSectionData.top == 0 && CheckedSectionData.bottom == 0;
       // Remove class 'active' from section when you are no longer browsing it
       section.removeAttribute("class", "your-active-class");
-      //listMenu.removeAttribute("class", "active__link");
       listMenu.classList.remove("active__link");
-
     }
   });
 }
 
-//Change The NavBar css style
+//To Be Made Later : Change The NavBar css style
 function hideNav()
 {
-console.log("you are not using me");
+//console.log("you are not using me");
 
 }
-//Call The Nave Function 
+
+//In version 2: Call The Nave Function 
 buildTheNav(sectionsList);
 
 //Call the Updating Function When Scrolling Happens

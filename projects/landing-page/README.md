@@ -2,12 +2,13 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [CSS](#styles.css)
+* [js](#app.js)
+* [index.html]
 
-## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Project Ideas
 
-To get started, open `js/app.js` and start building out the app's functionality
+The project's main idea is letting us (the students) get more familiar with the DOM, work with JS , dynamically create Elements and update them.
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+The project has 6 sections and 6 menu items are dynamically built in the navigation bar. The selected section is highlighted as well as the navigation menu connected to it.
